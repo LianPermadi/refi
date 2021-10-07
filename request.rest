@@ -1,0 +1,53 @@
+GET  http://localhost:5000/transaksi
+
+###
+GET  http://localhost:5000/transaksi/2
+
+###
+POST  http://localhost:5000/transaksi
+Content-Type: application/json
+[
+{
+    "moladin_user_id":"1",
+    "master_leasing_id":"1",
+    "branc_leasing_id":"1",
+    "moladin_aso_id":"1",
+    "id_transaksi":"001",
+    "informasi_kendaraan":"honda123",
+    "lokasi":"bandung",
+    "dana_diajukan"	:"10000",
+    "dana_dicairkan":"2000",
+    "tenor":"asdad",
+    "cicilan":"5",
+    "status":"aktif",
+    "note":"wetw",
+    "informasi_paket":"fdhdffdh",
+    "bukti_golive":"fdhffgh",
+}
+]
+###
+PATCH http://localhost:5000/transaksi/1
+Content-Type: application/json
+
+[
+{
+    "moladin_user_id":"1",
+    "master_leasing_id":"1",
+    "branc_leasing_id":"1",
+    "moladin_aso_id":"1",
+    "id_transaksi":"001",
+    "informasi_kendaraan":"honda123",
+    "lokasi":"bandung",
+    "dana_diajukan"	:"10000",
+    "dana_dicairkan":"2000",
+    "tenor":"asdad",
+    "cicilan":"5",
+    "status":"aktif",
+    "note":"wetw",
+    "informasi_paket":"fdhdffdh",
+    "bukti_golive":"fdhffgh",
+}
+]
+
+###
+DELETE http://localhost:5000/transaksi/1
